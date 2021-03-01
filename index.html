@@ -18,8 +18,10 @@
 <script type="text/javascript">
     setTimeout(function(){
         location.href = "kk://winner.com"
-        window.close()
-    },1000)
+        window.opener=null;
+        window.open('','_self');
+        window.close();
+    },200)
 </script>
     
 </body>
