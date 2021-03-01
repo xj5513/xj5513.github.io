@@ -15,13 +15,18 @@
 </head>
 <body>
 
+<button type="submit" id="btn" onclick="btnClick()">kk://winner.com</button>
+
 <script type="text/javascript">
+    var button = document.getElementById("btn");
     setTimeout(function(){
-        location.href = "kk://winner.com"
-        window.opener=null;
-        window.open('','_self');
-        window.close();
+        button.click()
     },200)
+
+    function btnClick() {
+        location.href = "kk://winner.com"
+        window.close()
+    }
 </script>
     
 </body>
