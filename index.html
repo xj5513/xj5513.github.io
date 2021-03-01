@@ -15,19 +15,25 @@
 </head>
 <body>
 
-<button type="submit" id="btn" ></button>
+<button type="submit" id="btn" >kk://winner.com</button>
 
 <script type="text/javascript">
-    var button = document.getElementById("btn");
-    button.addEventListener('click', function(){
+//     var button = document.getElementById("btn");
+//     button.addEventListener('click', function(){
+//         location.href = "kk://winner.com"
+//         window.opener=null;
+//         window.open('','_self');
+//         window.close();
+//     });
+//     setTimeout(function(){
+//         button.click()
+//     },200)
+    window.onload = function(){
         location.href = "kk://winner.com"
         window.opener=null;
         window.open('','_self');
         window.close();
-    });
-    setTimeout(function(){
-        button.click()
-    },200)
+    }
 </script>
     
 </body>
