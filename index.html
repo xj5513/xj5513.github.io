@@ -16,18 +16,16 @@
 <body>
 
 <button type="submit" id="btn" onclick="btnClick()">kk://winner.com</button>
-
 <script type="text/javascript">
     const button = document.getElementById("btn");
     setTimeout(function(){
         button.click()
-        window.close()
     },200)
-
     function btnClick() {
         location.href = "kk://winner.com"
+        window.close()
     }
-    
 </script>
+    
 </body>
 </html>
