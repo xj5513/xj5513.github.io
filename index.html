@@ -14,29 +14,20 @@
     </style>
 </head>
 <body>
-<h1>kk://winner.com1</h1>
-<br/>
-<br/>
-<button type="submit" id="btn1" onclick="btn1Click()"> kk://winner.com </button>
-<br/>
-<br/>
-<br/>
-<button type="submit" id="btn2" onclick="btn2Click()"> myyh://yhlife.com </button>
-<br/>
-<br/>
+
+<button type="submit" id="btn" onclick="btnClick()">kk://winner.com</button>
 
 <script type="text/javascript">
-    // var button = document.getElementById("downloadButton1");
-    // setTimeout(function(){
-    //     button.click()
-    //     window.close()
-    // },200)
-    function btn1Click() {
+    const button = document.getElementById("btn");
+    setTimeout(function(){
+        button.click()
+        window.close()
+    },200)
+
+    function btnClick() {
         location.href = "kk://winner.com"
     }
-    function btn2Click() {
-        location.href = "myyh://yhlife.com"
-    }
+    
 </script>
 </body>
 </html>
