@@ -15,13 +15,16 @@
 
     function toKK() {
         location.href = "kk://winner.com";
-        alert("test");
         window.close();
     }
 
-    setTimeout(function(){
+    window.onload = function(){
         toKK();
-    },200);
+    }
+
+    // setTimeout(function(){
+    //     toKK();
+    // },200);
 
 </script>
 
