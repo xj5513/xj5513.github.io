@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,40 +7,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
-<body>
 
-<button type="submit" id="btn">kk://winner.com</button>
-    
-<script type="text/javascript">
+<body style="alignment: center; text-align: center;" onload="toKK();">
+
+<button type="submit" id="openApp" onclick="toKK()">kk://winner.com</button>
+
+
+<script type="text/javascript" src="callApp.js">
 
     function toKK() {
-        location.href = "kk://winner.com";
-        window.close();
+        // location.href = "kk://winner.com";
+        // window.close();
+        openApp();
     }
 
-    // setTimeout(function(){
-    //     toKK();
-    // },200);
-    const url = {
-        open: 'kk://winner.com',
-    };
-    let iframe = document.createElement('iframe');
-    let body = document.body;
-    iframe.style.cssText='display:none;width=0;height=0';
-    // 立即打开的按钮
-    let openApp = document.getElementById('openApp');
-    openApp.addEventListener('click', function() {
-        if(/MicroMessenger/gi.test(navigator.userAgent)) {
-            // 引导用户在浏览器中打开
-        } else {
-            body.appendChild(iframe);
-            iframe.src = url.open;
-            window.close();
-        }
-    }, false)
+    openApp()
 
-</script>   
-    
+</script>
 
 </body>
+
 </html>
+
